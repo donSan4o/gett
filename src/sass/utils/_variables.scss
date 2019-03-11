@@ -1,0 +1,50 @@
+// Sass Variables
+// Colors
+$black: #000;
+$light-black: #1c1c1c;
+$white: #fff;
+$blue: #00f;
+$darkgreen: #313b0f;
+$orange: rgb(254, 197, 23);
+$white-f7: #F7F7F7;
+$red: #E32636;
+
+// Body
+$base-font-size: 18px !default;
+$base-line-height: 1.2 !default;
+$base-text-color: $light-black !default;
+$base-font-family: 'Roboto', Arial, Helvetica, sans-serif !default;
+$base-background-color: $white-f7 !default;
+$base-min-width: 320px;
+
+// Headings
+$h1-font-size: 1.4vw !default;
+$h2-font-size: 80px !default;
+$h3-font-size: 30px !default;
+$h4-font-size: 21px !default;
+$h5-font-size: 17px !default;
+$h6-font-size: 15px !default;
+
+$headings-line-height: 1.2 !default;
+
+$headings-font-family: inherit !default;
+$headings-font-weight: bold !default;
+$headings-color: inherit !default;
+
+// Links
+$base-link-color: $blue;
+$hover-link-color: $blue;
+
+// Grid
+$content-max-width: 980px;
+$side-space: 20px;
+
+// Tablet view
+$tablet-width: 1003px;
+
+// Smartphone view
+$mobile-width: 768px;
+
+// Animation
+$animation-speed: 0.5s;
+$animation-func: ease;
