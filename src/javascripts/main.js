@@ -26,8 +26,8 @@ function initPage() {
         responsiveWidth: '769',
         licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
         fixedElements: '#header, #fixed-bg',
-        anchors: ['main', 'about', 'conditions', 'contacts','connect'],
-        menu: '#myMenu',
+        anchors: ['main', 'about', 'conditions', 'contacts', 'connect'],
+        menu: '#myMenu, #footer-menu',
         offsetSections: true,
         scrollOverflow: true
     });
@@ -47,8 +47,8 @@ function initPage() {
         $('.menu-mobile').removeClass('back');
     });
     $('.slider-about').owlCarousel({
-        animateOut: 'slideOutDown',
-        animateIn: 'flipInX',
+        animateOut: 'animated',
+        animateIn: 'animated',
         items:1,
         nav:true,
         margin:30,

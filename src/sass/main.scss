@@ -178,7 +178,7 @@
 	    left: -30px;
 	    right: 0;
 	    margin: 0 auto;
-	    top: 33%;
+	    top: 37%;
     	z-index: 2;
 	}
 }
@@ -290,20 +290,35 @@
 		bottom: 50px;
 	}
 }
-/* main styles */
-// #fixed-bg {
-// 	width: 100vw;
-// 	height: 100vh;
-// 	position: fixed;
-// 	top: 0;
-// 	z-index: 1;
-// 	background: url(../images/main-bg.png) center no-repeat;
-// 	background-size: cover;
-// 	@media (max-width: 992px) {
-// 		background: url(../images/tablet-bg.png) center no-repeat;
-// 		background-size: cover;
-// 	}
-// }
-// #fullpage {
-// 	z-index: 2;
-// }
+.owl-carousel {
+	.animated  {
+		animation-duration: 500ms;
+	  	// animation-fill-mode: both;
+	}  
+	/* .owl-animated-out - only for current item */ 
+	/* This is very important class. Use z-index if you want move Out item above In item */ 
+	.owl-animated-out {
+		z-index: 0;
+		h3 {
+			animation: fadeOutDown 0.5s;
+			opacity: 0;
+		}
+		img {
+			animation: fadeOutDown 0.5s;
+			opacity: 0;	
+		}
+	}
+	/* .owl-animated-in - only for upcoming item
+	/* This is very important class. Use z-index if you want move In item above Out item */ 
+	.owl-animated-in {
+		z-index: 1; 
+		h3 {
+			animation: fadeInUp 0.5s;
+			opacity: 1;
+		}
+		img {
+			animation: fadeInDown 0.5s;
+			opacity: 1;	
+		}
+	} 
+}
