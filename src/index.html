@@ -17,17 +17,18 @@
     <body>
         <div id="header" class="d-flex align-items-center">
             <div class="header-inner d-flex align-items-center justify-content-center">
-                <a href="#" class="menu-mobile">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </a>
+                <a href="#" class="mobile-logo">Gett24</a>
                 <ul id="myMenu" class="d-flex align-items-center">
                     <li data-menuanchor="about"><a href="#about">О Gett</a></li>
                     <li data-menuanchor="conditions"><a href="#conditions">Условия</a></li>
                     <li data-menuanchor="contacts"><a href="#contacts">Контакты</a></li>
                     <li data-menuanchor="connect"><a href="#connect">Подключиться</a></li>
                 </ul>
+                <a href="#" class="menu-mobile">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
             </div>
         </div>
         
@@ -40,9 +41,9 @@
                         <h2>Gett 24</h2>
                     </div>
                     <div class="d-flex align-items-center justify-content-between center-line">
-                        <span>Заводи</span>
-                        <img src="images/main-image.png" alt="Gett">
-                        <span>Выезжай</span>
+                        <span class="rtl-animation">Заводи<i></i></span>
+                        <img src="images/main-image.jpg" alt="Gett">
+                        <span class="ltr-animation"><i></i>Выезжай</span>
                     </div>
                     <div class="d-flex justify-content-between bottom-line">
                         <h2>Работай с Gett</h2>
@@ -51,7 +52,7 @@
                 </div>
             </div>
             <div class="section slider-section">
-                <div class="owl-carousel owl-theme slider-about">
+                <div class="owl-carousel owl-theme slider-about hide-mobile">
                     <div class="container d-flex justify-content-between">
                         <div class="left-box">
                             <div class="top-box">
@@ -65,8 +66,8 @@
                         <div class="right-box">
                             <img src="images/slide-1.png" alt="slide-1">
                             <div class="d-flex digit-holder">
-                                <span>0</span>
-                                <span>1</span>
+                                <span class="zero">0</span>
+                                <span class="fade-span">1</span>
                             </div>
                         </div>
                     </div>
@@ -83,8 +84,8 @@
                         <div class="right-box">
                             <img src="images/slide-2.png" alt="slide-2">
                             <div class="d-flex digit-holder">
-                                <span>0</span>
-                                <span>2</span>
+                                <span class="zero">0</span>
+                                <span class="fade-span">2</span>
                             </div>
                         </div>
                     </div>
@@ -101,8 +102,8 @@
                         <div class="right-box">
                             <img src="images/slide-3.png" alt="slide-3">
                             <div class="d-flex digit-holder">
-                                <span>0</span>
-                                <span>3</span>
+                                <span class="zero">0</span>
+                                <span class="fade-span">3</span>
                             </div>
                         </div>
                     </div>
@@ -119,8 +120,8 @@
                         <div class="right-box">
                             <img src="images/slide-4.png" alt="slide-4">
                             <div class="d-flex digit-holder">
-                                <span>0</span>
-                                <span>4</span>
+                                <span class="zero">0</span>
+                                <span class="fade-span">4</span>
                             </div>
                         </div>
                     </div>
@@ -137,17 +138,43 @@
                         <div class="right-box">
                             <img src="images/slide-5.png" alt="slide-5">
                             <div class="d-flex digit-holder">
-                                <span>0</span>
-                                <span>5</span>
+                                <span class="zero">0</span>
+                                <span class="fade-span">5</span>
                             </div>
                         </div>
                         
                     </div>
                 </div>
-                <button class="connect">Подключиться</button>
+                <div class="mobile-only">
+                    <div class="container d-flex justify-content-between">
+                        <div class="top-box">
+                            <h3 class="text-left">Быстрый старт и регистрация</h3>
+                            <p class="text-left">
+                                Легкая регистрация дает возможность начать зарабатывать в первый день
+                            </p>
+                        </div>
+                        <div class="bottom-box d-flex align-items-center">
+                            <img src="images/slide-1.png" alt="slide-1" class="mr-40">
+                            <h2>Я стал<br>водителем</h2>
+                        </div>
+                    </div>
+                    <div class="container d-flex justify-content-between">
+                        <div class="top-box">
+                            <h3 class="text-right justify-content-end">Принимайте заказы когда захотите</h3>
+                            <p class="text-right ml-auto">
+                                У каждого из нас много различных дел. Поэтому Gett дает вам возможность работать в любой по-настоящему удобный момент.
+                            </p>
+                        </div>
+                        <div class="bottom-box d-flex align-items-center justify-content-between">
+                            <h2 class="text-right">Работаю<br>в выходные</h2>
+                            <img src="images/slide-2.png" alt="slide-2" class="ml-40">
+                        </div>
+                    </div>
+                </div>
+                <button class="connect hide-mobile">Подключиться</button>
             </div>
             <div class="section conditions">
-                <div class="owl-carousel owl-theme slider-conditions">
+                <div class="owl-carousel owl-theme slider-conditions hide-mobile">
                     <div class="container d-flex justify-content-between align-items-center">
                         <div class="left-box">
                             <h2>Условия работы водителем в Gett</h2>
@@ -172,7 +199,26 @@
                         </ul>
                     </div>
                 </div>
-                <span class="detail">*Более детальную информацию узнайте у наших менеджеров</span>
+                <div class="mobile-only">
+                    <div class="container d-flex flex-column">
+                        <h2>Условия работы водителем<br> в Gett</h2>
+                        <p class="text-left">Требования к водителю<span class="ml-30"></span></p>
+                        <ul class="right-box">
+                            <li>Права категории В</li>
+                            <li>Стаж вождения от 3 лет</li>
+                            <li>Возраст от 21 года</li>
+                        </ul>
+                    </div>
+                    <div class="container d-flex align-items-end flex-column">
+                        <p class="text-right"><span></span>Требования к автомобилю</p>
+                        <ul class="right-box text-right">
+                            <li>Эконом: от 2010 года выпуска</li>
+                            <li>Комфорт: от 2011 года выпуска</li>
+                            <li>Бизнес: от 2012 года выпуска</li>
+                        </ul>
+                    </div>
+                </div>
+                <span class="detail hide-mobile">*Более детальную информацию узнайте у наших менеджеров</span>
             </div>
             <div class="section contacts">
                 <div class="container d-flex justify-content-between">

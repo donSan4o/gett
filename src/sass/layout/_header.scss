@@ -6,38 +6,52 @@
     top: 0;
     left: 0;
     right: 0;
+    @media (max-width: 769px) {
+        height: 80px;
+        background: $white-f7;
+    }
     .header-inner {
         max-width: 1200px;
         width: 100%;
         margin: 0 auto;
         height: 100%;
+        @media (max-width: 769px) {
+            justify-content: space-between !important;
+            padding: 0 35px;
+        }
+        .mobile-logo {
+            display: none;
+            @media (max-width: 769px) {
+                display: block;
+                font-size: 24px;
+                font-weight: bold;
+                color: $black;
+            }
+        }
         .menu-mobile {
             display: none;
-            width: 55px;
-            height: 55px;
-            border: 2px solid $white;
-            border-radius: 50%;
+            width: 30px;
+            height: 20px;
             flex-shrink: 0;
             position: relative;
             z-index: 100;
-            @media (max-width: 992px) {
+            @media (max-width: 769px) {
                 display: block;
                 span {
-                    width: 25px;
+                    width: 30px;
                     height: 2px;
-                    background: #fff;
+                    background: $black;
                     position: absolute;
-                    top: 14px;
+                    top: 0;
                     left: 0;
                     right: 0;
                     margin: 0 auto;
-                    border-radius: 5px;
                     transition: all 0.3s;
                     &:nth-child(2) {
-                        top: 24px;
+                        top: 9px;
                     }
                     &:nth-child(3) {
-                        top: 35px;
+                        top: 17px;
                     }
                 }
             }
@@ -45,6 +59,17 @@
         #myMenu {
             height: 100%;
             flex-shrink: 0;
+            @media (max-width: 769px) {
+                position: absolute;
+                top: 80px;
+                right: -100%;
+                width: 100%;
+                background: $white-f7;
+                padding: 0 35px 30px;
+                height: auto;
+                flex-direction: column;
+                transition: all 0.3s;
+            }
             li {
                 width: 200px;
                 height: 40px;
@@ -61,29 +86,34 @@
                     bottom: 0;
                     left: 40px;
                 }
-                @media (max-width: 992px) {
+                @media (max-width: 769px) {
                     width: 100%;
                     display: flex;
-                    align-items: flex-start;
-                    flex-direction: column;
+                    align-items: center;
                     margin: 0;
-                    min-height: 90px;
-                    justify-content: space-around;
+                    justify-content: space-between;
                     position: relative;
-                    &:before {
+                    &:after {
                         content: '';
                         display: block;
-                        height: 3px;
-                        width: 100%;
-                        background: linear-gradient(0deg, rgb(29, 110, 153) 0%, rgba(185, 210, 223, 0.5) 69%, rgba(255, 255, 255, 0) 100%);
+                        width: 9px;
+                        height: 6px;
+                        background: url(/images/arrow-black.svg) no-repeat;
+                        background-size: contain;
                         position: absolute;
-                        top: 0;
-                        left: 0;
                         right: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
                     }
                 }
-                @media (max-width: 640px) {
-                    min-height: 50px;
+                a {
+                    @media (max-width: 769px) {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        font-size: 18px;
+                    }
                 }
                 &.active {
                     &:before {
@@ -94,6 +124,9 @@
                         position: absolute;
                         bottom: 0;
                         left: 40px;
+                        @media (max-width: 769px) {
+                            display: none;
+                        }
                     }
                 }
                 a {
