@@ -293,6 +293,39 @@ function initPage() {
         }
         e.preventDefault();
     });        
+
+    $(".connect-form").validate({
+            rules: {
+                name: "required",
+                email: {
+                    required: true,
+                    email: true
+                },
+                phone: "required",
+                city: "required",
+                
+            },
+            messages: {
+                name: "Заполните полностью ФИО",
+                email: "Введите свой email",
+                phone: "Введите номер телефона",
+                city: "Введите Ваш город",
+                driveId: "Введите номер водительского удостоверения",
+                autonum: "Ddtlbnt Гос. номер А/М",
+                numberLicense: "Введите номер разрешения на перевозку",
+                color: "Выберите цвет",
+                autobrand: "Выберите марку авто",
+                model: "Выберите модель",
+                year: "Выберите год",
+                paspname: "Введите фамилию имя отчество",
+                date: "Введите дату рождения",
+                country: "Выберите страну выдачи паспорта",
+                passport: "Укажите серию и номер паспорта",
+                bank: "Укажите БИК банка",
+                numbercart: "Укажите номер счета получателя (Р/C)"
+            }
+        });
+
 }
 /**
  * Owl Carousel v2.3.4

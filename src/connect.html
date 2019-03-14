@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="theme-color" content="#ffffff">
+        <title>Gett</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.3/fullpage.min.css"/>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+        <link rel="stylesheet" type="text/css" href="css/main.min.css">
+    </head>
+    <body class="white-bg connect-page">
+        <div id="header" class="d-flex align-items-center">
+            <div class="header-inner d-flex align-items-center justify-content-center">
+                <a href="#" class="mobile-logo">Gett24</a>
+                <ul id="myMenu" class="d-flex align-items-center">
+                    <li data-menuanchor="about"><a href="index.html#about">О Gett</a></li>
+                    <li data-menuanchor="conditions"><a href="index.html#conditions">Условия</a></li>
+                    <li data-menuanchor="contacts"><a href="index.html#contacts">Контакты</a></li>
+                    <li data-menuanchor="connect"><a href="#connect">Подключиться</a></li>
+                </ul>
+                <a href="#" class="menu-mobile">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+        </div>
+        <div class="container form-holder">
+            <form action="" class="connect-form">
+                <div class="form-row d-flex justify-content-between">
+                    <div class="left-box">
+                        <h3>Личные данные</h3>
+                        <input type="text" placeholder="Фамилия" name="name" required>
+                        <input type="email" placeholder="Email" name="email" required>
+                        <input type="text" placeholder="Телефон" name="phone" required>
+                        <select name="city" required>
+                            <option value="" disabled selected hidden>Город</option>
+                            <option value="Москва">Москва</option>
+                            <option value="Воронеж">Воронеж</option>    
+                            <option value="Омск">Омск</option>
+                        </select>
+                    </div>
+                    <div class="right-box">
+                        <div class="box__input">
+                            <img src="images/plus.svg" alt="Upload">
+                            <span>Загрузите фото профиля</span>
+                        </div>
+                        <a href="#" class="text-underline">Посмотреть пример</a>
+                    </div>
+                </div>
+                <div class="form-row d-flex justify-content-between">
+                    <div class="left-box">
+                        <h3>Водительское удостоверение</h3>
+                        <input type="text" placeholder="№ Водительского удостоверения" name="driveId" required>
+                        <input type="text" placeholder="Гос. номер А/М" name="autonum" required>
+                        <input type="text" placeholder="Номер разрешения на перевозку" name="numberLicense" required>
+                        <select name="color" required>
+                            <option value="" disabled selected hidden>Цвет А/М</option>
+                            <option value="Белый">Белый</option>
+                            <option value="Черный">Черный</option>
+                        </select>
+                        <select name="autobrand" required>
+                            <option value="" disabled selected hidden>Марка авто</option>
+                            <option value="BMW">BMW</option>
+                            <option value="Audi">Audi</option>
+                        </select>
+                        <select name="model" required>
+                            <option value="" disabled selected hidden>Модель авто</option>
+                            <option value="X5">X5</option>
+                            <option value="Q7">Q7</option>
+                        </select>
+                        <select name="year" required>
+                            <option value="" disabled selected hidden>Год выпуска</option>
+                            <option value="2017">2017</option>
+                            <option value="2018">2018</option>
+                        </select>
+                    </div>
+                    <div class="right-box">
+                        <div class="box__input">
+                            <img src="images/plus.svg" alt="Upload">
+                            <span>Загрузите фото В/У</span>
+                        </div>
+                        <label for="vertical" class="label-container">Вертикальное В/У
+                            <input type="checkbox" id="vertical">
+                            <span class="checkmark"></span>
+                        </label>
+                        <a href="#" class="text-underline">Посмотреть пример</a>
+                    </div>
+                </div>
+                <div class="form-row d-flex justify-content-between">
+                    <div class="left-box">
+                        <h3>Паспортные данные</h3>
+                        <input type="text" placeholder="Фамилия Имя Отчество" name="paspname" required>
+                        <input type="text" placeholder="Дата рождения" name="date" required>
+                        <select name="country" required>
+                            <option value="" disabled selected hidden>Страна выдачи паспорта</option>
+                            <option value="РФ">Российская Федераци</option>
+                            <option value="Казахстан">Казахстан</option>    
+                            <option value="Узбекситан">Узбекситан</option>
+                        </select>
+                        <input type="text" placeholder="Серия и номер паспорта" name="passport" required>
+                    </div>
+                    <div class="right-box">
+                        <div class="box__input">
+                            <img src="images/plus.svg" alt="Upload">
+                            <span>Загрузите фото паспорта</span>
+                        </div>
+                        <a href="#" class="text-underline">Посмотреть пример</a>
+                    </div>
+                </div>
+                <div class="form-row d-flex justify-content-between">
+                    <div class="left-box">
+                        <h3>Реквизиты</h3>
+                        <label for="moneycheck" class="label-container">Получатель средств сторонее лицо
+                            <input type="checkbox" id="moneycheck">
+                            <span class="checkmark"></span>
+                        </label>
+                        <input type="text" placeholder="БИК банка" name="bank" required>
+                        <input type="text" placeholder="Номер счета получателя (Р/C)" name="numbercart" required>
+                    </div>
+                </div>
+                <span class="d-flex align-items-center check"><img src="images/check.svg" alt="check">Партнер подтвеждает наличие отношений с водителем и согласие последнего на сотрудничество с указаным партнером при распределении заказов на перевозку в рамках ПО GT.</span>
+                <input type="submit" class="submit" value="Подключиться">
+            </form>
+        </div>
+        <div class="section fp-auto-height footer">
+                <div class="container d-flex align-items-center justify-content-between">
+                    <a href="tel:+88005553535" class="phone">8 800 555 35 35</a>
+                    <ul id="footer-menu" class="d-flex align-items-center">
+                        <li data-menuanchor="about"><a href="#about">О Gett</a></li>
+                        <li data-menuanchor="conditions"><a href="#conditions">Условия</a></li>
+                        <li data-menuanchor="contacts"><a href="#contacts">Контакты</a></li>
+                        <li data-menuanchor="connect"><a href="connect.html">Подключиться</a></li>
+                    </ul>
+                    <p class="copy">© 2019 Gett Taxi</p>
+                </div>
+            </div>
+        </div>
+        <div class="fader"></div>
+        <noscript>Detected missing Javascript support. Certain website features will not operate correctly with Javascript disabled.</noscript>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.3/vendors/scrolloverflow.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.1/fullpage.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/additional-methods.min.js"></script>
+        <script type="text/javascript" src="js/main.min.js"></script>
+    </body>
+</html>
