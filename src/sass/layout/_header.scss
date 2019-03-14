@@ -10,6 +10,9 @@
         height: 80px;
         background: $white-f7;
     }
+    @media (max-width: 640px) {
+        height: 60px;
+    }
     .header-inner {
         max-width: 1200px;
         width: 100%;
@@ -18,6 +21,10 @@
         @media (max-width: 769px) {
             justify-content: space-between !important;
             padding: 0 35px;
+        }
+        @media (max-width: 640px) {
+            justify-content: space-between !important;
+            padding: 0 20px;
         }
         .mobile-logo {
             display: none;
@@ -69,6 +76,10 @@
                 height: auto;
                 flex-direction: column;
                 transition: all 0.3s;
+            }
+            @media (max-width: 640px) {
+                padding: 0 20px 30px;
+                top: 60px;
             }
             li {
                 width: 200px;

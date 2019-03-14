@@ -8,6 +8,9 @@
             padding: 40px 35px 30px;
             flex-wrap: wrap;
         }
+        @media (max-width: 640px) {
+            padding: 40px 20px 30px;
+        }
         .phone {
             font-size: 14px;
             color: $white;

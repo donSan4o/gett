@@ -30,6 +30,9 @@ body{
 	@media (max-width: 769px) {
 		background: $white;
 	}
+	@media (max-width: 640px) {
+		background: $white-f7;
+	}
 }
 ul{list-style: none;}
 blockquote, q{quotes: none;}
