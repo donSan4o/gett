@@ -241,7 +241,6 @@ function initPage() {
         fixedElements: '#header, #fixed-bg',
         anchors: ['main', 'about', 'conditions', 'contacts', 'connect'],
         menu: '#myMenu, #footer-menu',
-        scrollingSpeed: 1400,
         offsetSections: true,
         scrollOverflow: true,
         normalScrollElements: '.slider-about, .slider-conditions',
@@ -303,6 +302,7 @@ $('.slider-about').owlCarousel({
     nav:true,
     margin:0,
     stagePadding:0,
+    smartSpeed: 550,
     loop: false
 });
 $('.slider-about .owl-dot').each(function(){
@@ -316,7 +316,8 @@ $('.slider-conditions').owlCarousel({
     nav:false,
     margin:0,
     stagePadding:0,
-    loop: false
+    loop: false,
+    smartSpeed: 450
 });
 
 owl.on('mousewheel', '.owl-stage', function(e) {
