@@ -228,6 +228,7 @@ function initPage() {
         fixedElements: '#header, #fixed-bg',
         anchors: ['main', 'about', 'conditions', 'contacts', 'connect'],
         menu: '#myMenu, #footer-menu',
+        scrollingSpeed: 1400,
         offsetSections: true,
         scrollOverflow: true,
         normalScrollElements: '.slider-about, .slider-conditions',
@@ -245,72 +246,71 @@ function initPage() {
     	$('.fader').removeClass('show');
     });
 
-    var owl = $('.owl-carousel');
-
-    $('.slider-about').owlCarousel({
-        animateOut: 'fadeOut',
-        animateIn: 'fadeIn',
-        items:1,
-        nav:true,
-        margin:0,
-        stagePadding:0,
-        smartSpeed:450,
-        loop: true
-    });
-    $('.slider-about .owl-dot').each(function(){
-        $(this).children('span').text($(this).index()+1);
-    });
-
-    $('.slider-conditions').owlCarousel({
-        animateOut: 'fadeOut',
-        animateIn: 'fadeIn',
-        items:1,
-        nav:false,
-        margin:0,
-        stagePadding:0,
-        loop: true,
-        smartSpeed:450
-    });
     
-    owl.on('mousewheel', '.owl-stage', function(e) {
-        if (e.deltaY > 0) {
-            owl.trigger('next.owl');
-        } else {
-            owl.trigger('prev.owl');
-        }
-        e.preventDefault();
-    });        
 
     $(".connect-form").validate({
-            rules: {
-                name: "required",
-                email: {
-                    required: true,
-                    email: true
-                },
-                phone: "required",
-                city: "required",
-                
+        rules: {
+            name: "required",
+            email: {
+                required: true,
+                email: true
             },
-            messages: {
-                name: "Заполните полностью ФИО",
-                email: "Введите свой email",
-                phone: "Введите номер телефона",
-                city: "Введите Ваш город",
-                driveId: "Введите номер водительского удостоверения",
-                autonum: "Ddtlbnt Гос. номер А/М",
-                numberLicense: "Введите номер разрешения на перевозку",
-                color: "Выберите цвет",
-                autobrand: "Выберите марку авто",
-                model: "Выберите модель",
-                year: "Выберите год",
-                paspname: "Введите фамилию имя отчество",
-                date: "Введите дату рождения",
-                country: "Выберите страну выдачи паспорта",
-                passport: "Укажите серию и номер паспорта",
-                bank: "Укажите БИК банка",
-                numbercart: "Укажите номер счета получателя (Р/C)"
-            }
-        });
-
+            phone: "required",
+            city: "required",
+            
+        },
+        messages: {
+            name: "Заполните полностью ФИО",
+            email: "Введите свой email",
+            phone: "Введите номер телефона",
+            city: "Введите Ваш город",
+            driveId: "Введите номер водительского удостоверения",
+            autonum: "Ddtlbnt Гос. номер А/М",
+            numberLicense: "Введите номер разрешения на перевозку",
+            color: "Выберите цвет",
+            autobrand: "Выберите марку авто",
+            model: "Выберите модель",
+            year: "Выберите год",
+            paspname: "Введите фамилию имя отчество",
+            date: "Введите дату рождения",
+            country: "Выберите страну выдачи паспорта",
+            passport: "Укажите серию и номер паспорта",
+            bank: "Укажите БИК банка",
+            numbercart: "Укажите номер счета получателя (Р/C)"
+        }
+    });
 }
+
+var owl = $('.owl-carousel');
+
+$('.slider-about').owlCarousel({
+    animateOut: 'fadeOutDown',
+    animateIn: 'fadeInUp',
+    items:1,
+    nav:true,
+    margin:0,
+    stagePadding:0,
+    loop: false
+});
+$('.slider-about .owl-dot').each(function(){
+    $(this).children('span').text($(this).index()+1);
+});
+
+$('.slider-conditions').owlCarousel({
+    animateOut: 'fadeOut',
+    animateIn: 'fadeIn',
+    items:1,
+    nav:false,
+    margin:0,
+    stagePadding:0,
+    loop: false
+});
+
+owl.on('mousewheel', '.owl-stage', function(e) {
+    if (e.deltaY > 0) {
+        owl.trigger('next.owl');
+    } else {
+        owl.trigger('prev.owl');
+    }
+    e.preventDefault();
+});        
