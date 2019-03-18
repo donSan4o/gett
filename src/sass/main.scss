@@ -93,7 +93,7 @@
 	font-size: 24px;
 	color: $white-f7;
 	background: $light-black;
-	outline: none;
+	outline: 0;
 	border: 0;
 	padding: 0;
 	cursor: pointer;
@@ -291,7 +291,7 @@
 	    		background: $red;
 	    	}
 	    	&:focus {
-	    		outline: none;
+	    		outline: 0;
 	    	}
 	    	&.active {
 	    		background: $red;
@@ -575,7 +575,7 @@
 					margin-bottom: 30px;
 					-webkit-appearance: none;
 					appearance: none;
-					outline: none;
+					outline: 0;
 					background: transparent;
 					&:last-child {
 						margin-bottom: 0;
