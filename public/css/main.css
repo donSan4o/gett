@@ -1241,13 +1241,13 @@ a {
         border-radius: 0;
         position: relative; }
       .form-holder .form-row .left-box input.error {
-        background: url(/images/error.svg) no-repeat;
+        background: url(../images/error.svg) no-repeat;
         background-size: 15px;
         background-position: center right; }
       .form-holder .form-row .left-box select {
         -ms-flex-pack: justify;
             justify-content: space-between;
-        background: url(/images/arrow-gray.svg) no-repeat;
+        background: url(../images/arrow-gray.svg) no-repeat;
         background-size: 9px 6px;
         background-position: center right; }
       .form-holder .form-row .left-box label.error {
@@ -1269,7 +1269,7 @@ a {
       .form-holder .form-row .right-box .box__input {
         width: 300px;
         height: 300px;
-        background: url(/images/square.png) no-repeat;
+        background: url(../images/square.svg) no-repeat;
         display: -ms-flexbox;
         display: flex;
         -ms-flex-align: center;
