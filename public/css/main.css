@@ -659,7 +659,7 @@ a {
       flex-direction: column;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  max-width: 500px;
+  max-width: 465px;
   width: 100%;
   -ms-flex-negative: 0;
       flex-shrink: 0; }
@@ -849,8 +849,8 @@ a {
     top: 50%;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
     transform: translateY(-50%); }
     .slider-section .owl-dots button {
       width: 30px;
