@@ -7,7 +7,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:donSan4o/uonline.git"
+    "url": "git@github.com:donSan4o/gett.git"
   },
   "devDependencies": {
     "browser-sync": "^2.7.5",
