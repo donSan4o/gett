@@ -13,6 +13,10 @@
 @import "layout/forms";
 @import "layout/footer";
 
+* {
+	outline: 1px solid #9C27B0 !important;
+}
+
 .m-0 {
 	margin: 0;
 }
@@ -36,6 +40,25 @@
 }
 .black {
 	color: $black;
+}
+.section {
+	position: relative;
+	height: auto;
+	min-height: 70vh;
+	// background-color: #009688;
+	// padding-left: 10rem;
+	// padding-right: 10rem;
+	padding-top: 15vh;
+	padding-bottom: 15vh;
+	// margin-bottom: 10vh;
+	&.fp-section {
+		min-height: unset;
+		padding: 0;
+	}
+	&.footer {
+		padding: 0;
+		min-height: unset;
+	}
 }
 .fp-section.fp-table, .fp-slide.fp-table {
 	@media (max-width: 769px) {
@@ -79,12 +102,12 @@
 .left-box {
 	display: flex;
 	flex-direction: column;
-    justify-content: space-between;
+	justify-content: space-between;
 	max-width: 465px;
 	width: 100%;
 	flex-shrink: 0;
 }
-.connect,.submit {
+.connect, .submit {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -230,19 +253,20 @@
 		}	
 	}
 	.connect {
-	    position: absolute;
-	    right: 10px;
-    	bottom: 110px;
-    	z-index: 2;
-    	@media (max-width: 769px) {
-    		position: relative;
-    		bottom: 0;
-    		left: 0;
-    		right: 0;
-    		margin: 20px auto 60px;
-    	}
+		position: absolute;
+		right: 10px;
+		bottom: 110px;
+		z-index: 2;
+		@media (max-width: 769px) {
+			position: relative;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: 20px auto 60px;
+		}
 	}
 }
+
 .slider-section {
 	position: relative;
 	.left-box {
@@ -272,46 +296,46 @@
 		display: none;
 	}
 	.owl-dots {
-	    position: absolute;
-	    right: 50px;
-	    top: 50%;
-	    display: flex;
-	    flex-direction: column-reverse;
-	    transform: translateY(-50%);
-	    button {
-	    	width: 30px;
-	    	height: 40px;
+		position: absolute;
+		right: 50px;
+		top: 50%;
+		display: flex;
+		flex-direction: column;
+		transform: translateY(-50%);
+		button {
+			width: 30px;
+			height: 40px;
 			font-family: Roboto;
 			font-style: normal;
 			font-weight: bold;
 			line-height: normal;
 			text-align: center;
 			color: #1C1C1C;
-	    	transform: rotate(-90deg);
-	    	&:hover {
-	    		background: $red;
-	    	}
-	    	&:focus {
-	    		outline: 0;
-	    	}
-	    	&.active {
-	    		background: $red;
-	    	}
-		    span {
-		    	font-size: 18px;
+			// transform: rotate(-90deg);
+			&:hover {
+				background: $red;
+			}
+			&:focus {
+				outline: 0;
+			}
+			&.active {
+				background: $red;
+			}
+			span {
+				font-size: 18px;
 				font-weight: bold;
 				text-align: center;
 				
-		    }	
-	    }
+			}	
+		}
 	}
 	.connect {
-	    position: absolute;
-	    left: -30px;
-	    right: 0;
-	    margin: 0 auto;
-	    top: 37%;
-    	z-index: 2;
+		position: absolute;
+		left: -30px;
+		right: 0;
+		margin: 0 auto;
+		top: 37%;
+		z-index: 2;
 	}
 	.mobile-only {
 		.container {
@@ -398,7 +422,7 @@
 					display: flex;
 					align-items: center;
 					height: 40px;
-    				margin-left: 60px;
+					margin-left: 60px;
 				}	
 			}
 			
@@ -406,9 +430,9 @@
 		.right-box {
 			flex-shrink: 0;
 			li {
-			    display: flex;
-	    		align-items: center;
-	    		justify-content: flex-end;	
+				display: flex;
+				align-items: center;
+				justify-content: flex-end;	
 				height: 60px;
 				font-weight: bold;
 				font-size: 24px;
@@ -421,10 +445,38 @@
 		left: 0;
 		right: 0;
 		bottom: 40px;
-	    max-width: 1200px;
-    	width: 100%;
-    	margin: 0 auto;
-    	text-align: right;
+		max-width: 1200px;
+		width: 100%;
+		margin: 0 auto;
+		text-align: right;
+	}
+	.owl-dots {
+		button {
+			width: 30px;
+			height: 40px;
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: bold;
+			line-height: normal;
+			text-align: center;
+			color: #1C1C1C;
+			transform: rotate(-90deg);
+			&:hover {
+				background: $red;
+			}
+			&:focus {
+				outline: 0;
+			}
+			&.active {
+				background: $red;
+			}
+			span {
+				font-size: 18px;
+				font-weight: bold;
+				text-align: center;
+				
+			}	
+		}
 	}
 	.mobile-only {
 		.container {
@@ -682,18 +734,18 @@
 				}
 			}
 			select,input {
-			    width: 100%;
-			    height: 40px;
-			    display: flex;
-			    align-items: center;
-			    border: 0;
-			    border-bottom: 1px solid #1c1c1c;
-			    margin-bottom: 30px;
-			    appearance: none;
-			    outline: 0;
-			    background: none;
-			    border-radius: 0;
-			    position: relative;
+				width: 100%;
+				height: 40px;
+				display: flex;
+				align-items: center;
+				border: 0;
+				border-bottom: 1px solid #1c1c1c;
+				margin-bottom: 30px;
+				appearance: none;
+				outline: 0;
+				background: none;
+				border-radius: 0;
+				position: relative;
 			}
 			input.error {
 				background: url(../images/error.svg) no-repeat;
@@ -702,9 +754,9 @@
 			}
 			select {
 				justify-content: space-between;
-                background: url(../images/arrow-gray.svg) no-repeat;
-                background-size: 9px 6px;
-                background-position: center right;
+				background: url(../images/arrow-gray.svg) no-repeat;
+				background-size: 9px 6px;
+				background-position: center right;
 			}
 			label.error {
 				margin-top: -20px;
@@ -787,10 +839,10 @@
 				border: 2px solid #1C1C1C;
 				transform: translateY(-50%);
 				&:after {
-			  		content: "";
-				  	position: absolute;
-				  	display: none;
-				  	left: 0;
+					content: "";
+					position: absolute;
+					display: none;
+					left: 0;
 					right: 0;
 					margin: 0 auto; 
 					top: 50%;
@@ -800,7 +852,7 @@
 					background: #c5c5c5;
 				}
 			}
-		 	input {
+			input {
 				position: absolute;
 				opacity: 0;
 				cursor: pointer;
@@ -808,7 +860,7 @@
 				width: 0;
 				&:checked ~ .checkmark {
 					&:after {
-		  				display: block;
+						display: block;
 					}	
 				}
 			}
@@ -829,29 +881,40 @@
 		}
 	}
 }
+
+.owl-carousel .animated {
+	-webkit-animation-duration: $animation-speed-xl;
+	animation-duration: $animation-speed-xl;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
 .slider-section .owl-carousel {
 	.owl-animated-out {
 		z-index: 1;
-		h2,h3,p {
-			animation: fadeOutDown 2s;
+		// h2, h3, p {
+		.left-box {
+			animation: fadeOutDown $animation-speed-xxl;
 		}
-		.zero {
-			animation: fadeZero 1s;
-		}
-		img,.fade-span {
-			animation: fadeOutDownImg 1s;
+		// .zero {
+			// animation: fadeZero $animation-speed-xl;
+		// }
+		img, .fade-span {
+			animation: fadeOutDownImg $animation-speed-xl;
 		}
 	}
+	// .owl-item.active {
 	.owl-animated-in {
-		z-index: 0; 
-		h2,h3,p {
-			animation: fadeInUp 2s;
+		z-index: 0;
+		// h2, h3, p {
+		.left-box {
+			animation: fadeInUp $animation-speed-xxl;
 		}
-		.zero {
-			animation: fadeZero 1s;
-		}
-		img,.fade-span {
-			animation: fadeFromTop 1s;
+		// .zero {
+			// animation: fadeZero $animation-speed-xl;
+		// }
+		img, .fade-span {
+			animation: fadeFromTop $animation-speed-xl;
 		}
 	} 
 }
@@ -860,34 +923,34 @@
 	.owl-animated-out {
 		z-index: 1;
 		.right-box {
-			animation: fadeOutLeftText 1s;
+			animation: fadeOutLeftText $animation-speed-xl;
 		}
 		.left-box {
 			p {
-				animation: fadeOutDownText 2s;
+				animation: fadeOutDownText $animation-speed-xxl;
 			}
 			h2:before {
-				animation: left-to-right-h2 2s;
+				animation: left-to-right-h2 $animation-speed-xxl;
 			}
 			span {
-				animation: right-to-left-span 2s;
+				animation: right-to-left-span $animation-speed-xxl;
 			}
 		}
 	}
 	.owl-animated-in {
 		z-index: 0;
 		.right-box {
-			animation: fadeInRightText 1s;
+			animation: fadeInRightText $animation-speed-xl;
 		}
 		.left-box {
 			p {
-				animation: fadeInDownText 2s;	
+				animation: fadeInDownText $animation-speed-xxl;	
 			}
 			h2:before {
-				animation: left-to-right-h2 2s;
+				animation: left-to-right-h2 $animation-speed-xxl;
 			}
 			span {
-				animation: right-to-left-span 2s;
+				animation: right-to-left-span $animation-speed-xxl;
 			}
 		}
 	} 
@@ -903,3 +966,24 @@
 	animation-name: fadeInUp;
 }
 
+
+// DEBUG
+.attw-heading {
+	padding: 200px 10px;
+	border: 1px solid #f00;
+}
+.owl-carousel .owl-dot {
+	width: 4rem;
+	height: 4rem;
+	&.active {
+		background-color: #f00;
+	}
+}
+h1.wt2w6y46 {
+	animation-name: fadeInUp;
+	animation-duration: 10000ms;
+	animation-fill-mode: both;
+	padding: 10px;
+	z-index: 100;
+	position: relative;
+}

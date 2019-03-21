@@ -16,8 +16,8 @@
 /// @example scss - Usage
 ///   @include transform(translate3d(0, 0, 0) scale(1));
 @mixin transform($value...) {
-	-moz-transform: $value;
-	-webkit-transform: $value;
+	// -moz-transform: $value;
+	// -webkit-transform: $value;
 	// -o-transform: $value;
 	// -ms-transform: $value;
 	transform: $value;
@@ -86,12 +86,12 @@
 ///   }
 //  }
 @mixin keyframes($name) {
-	@-webkit-keyframes #{$name} {
-		@content;
-	}
-	@-moz-keyframes #{$name} {
-		@content;
-	}
+	// @-webkit-keyframes #{$name} {
+		// @content;
+	// }
+	// @-moz-keyframes #{$name} {
+		// @content;
+	// }
 	// @-ms-keyframes #{$name} {
 		// @content;
 	// }
