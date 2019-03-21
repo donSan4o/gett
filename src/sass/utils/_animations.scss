@@ -1,0 +1,166 @@
+// _animations.scss
+
+@include keyframes(fadeOutDown) {
+	from {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0;
+		@include transform(translate3d(0, 10px, 0));
+	}
+}
+
+@include keyframes(fadeInUp) {
+	from {
+		opacity: 0;
+		@include transform(translate3d(0, 10px, 0));
+	}
+
+	to {
+		opacity: 1;
+		@include transform(translate3d(0, 0, 0));
+	}
+}
+
+@include keyframes(fadeOutDownImg) {
+	from {
+		opacity: 1;
+		@include transform(translate3d(0, 0, 0) scale(1));
+	}
+
+	to {
+		opacity: 0;
+		@include transform(translate3d(0, 100%, 0) scale(0.6));
+	}
+}
+
+@include keyframes(fadeFromTop) {
+	from {
+		opacity: 0;
+		@include transform(translate3d(0, -100%, 0) scale(0.6));
+	}
+
+	to {
+		opacity: 1;
+		@include transform(translate3d(0, 0, 0) scale(1));
+	}
+}
+
+// @include keyframes(fadeZero) {
+	// from {
+		// opacity: 1;
+		// @include transform(translate3d(0, 0, 0) scale(1));
+	// }
+// 
+	// to {
+		// opacity: 1;
+		// @include transform(translate3d(0, 0, 0) scale(1));
+	// }
+// }
+
+@include keyframes(left-to-right) {
+	0% {
+		right: -40px;
+	}
+	25% {
+		right: -80px;
+	}
+	50% {
+		right: 0;
+	}
+	100% {
+		right: -40px;
+	}
+}
+
+@include keyframes(right-to-left) {
+	0% {
+		right: 0px;
+	}
+	25% {
+		right: 53px;
+	}
+	50% {
+		right: -25px;
+	}
+	100% {
+		right: 0px;
+	}
+}
+
+@include keyframes(fadeOutLeftText) {
+	from {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0;
+		@include transform(translate3d(-40px, 0, 0));
+	}
+}
+
+@include keyframes(fadeInRightText) {
+	from {
+		opacity: 0;
+		@include transform(translate3d(20%, 0, 0));
+	}
+
+	to {
+		opacity: 1;
+		@include transform(translate3d(0px, 0, 0));
+	}
+}
+
+@include keyframes(fadeOutDownText) {
+	from {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0;
+		@include transform(translate3d(0, 20px, 0));
+	}
+}
+
+@include keyframes(fadeInDownText) {
+	from {
+		opacity: 0;
+		@include transform(translate3d(0, -20px, 0));
+	}
+
+	to {
+		opacity: 1;
+		@include transform(translate3d(0, 0px, 0));
+	}
+}
+
+@include keyframes(right-to-left-span) {
+	0% {
+		left: 0px;
+	}
+	25% {
+		left: -20px;
+	}
+	50% {
+		left: 10px;
+	}
+	100% {
+		left: 0px;
+	}
+}
+
+@include keyframes(left-to-right-h2) {
+	0% {
+		left: 0px;
+	}
+	25% {
+		left: 20px;
+	}
+	50% {
+		left: -10px;
+	}
+	100% {
+		left: 0px;
+	}
+}

@@ -11,6 +11,18 @@
 	transition: $prop $animation-speed $animation-func;
 }
 
+/// transform mixin
+///
+/// @example scss - Usage
+///   @include transform(translate3d(0, 0, 0) scale(1));
+@mixin transform($value...) {
+	// -moz-transform: $value;
+	// -webkit-transform: $value;
+	// -o-transform: $value;
+	// -ms-transform: $value;
+	transform: $value;
+}
+
 /// Hides the text in an element, commonly used to show an image. Some elements will need block-level styles applied.
 ///
 /// @example scss - Usage
@@ -59,5 +71,31 @@
 		content: '';
 		display: block;
 		clear: both;
+	}
+}
+
+/// Keyframes mixin
+///
+/// @example scss - Usage
+/// @include keyframes(bgcolor) {
+///   0% {
+///     background-color: #ccffcc;
+///   }
+///   100% {
+///     background-color: #ccffff;
+///   }
+//  }
+@mixin keyframes($name) {
+	// @-webkit-keyframes #{$name} {
+		// @content;
+	// }
+	// @-moz-keyframes #{$name} {
+		// @content;
+	// }
+	// @-ms-keyframes #{$name} {
+		// @content;
+	// }
+	@keyframes #{$name} {
+		@content;
 	}
 }
