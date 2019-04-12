@@ -1570,3 +1570,7 @@ h1.wt2w6y46 {
   padding: 10px;
   z-index: 100;
   position: relative; }
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .owl-carousel .owl-item {
+    padding-top: 100px; } }
