@@ -838,6 +838,9 @@ a {
       .title-page .top-line b {
         min-width: 200px;
         padding-left: 20px; } }
+    @media (min-height: 500px) and (max-height: 650px) {
+      .title-page .top-line b {
+        padding-top: 50px; } }
   .title-page .top-line h2 {
     min-width: 300px;
     height: 140px;
@@ -855,6 +858,10 @@ a {
         font-size: 36px;
         position: relative;
         bottom: -20px; } }
+    @media (min-height: 500px) and (max-height: 650px) {
+      .title-page .top-line h2 {
+        position: relative;
+        bottom: -30px; } }
 
 .title-page .center-line {
   margin-top: -40px;
@@ -907,6 +914,9 @@ a {
   @media (max-width: 769px) {
     .title-page .bottom-line {
       margin: 0; } }
+  @media (min-height: 500px) and (max-height: 650px) {
+    .title-page .bottom-line {
+      margin-top: -100px; } }
   .title-page .bottom-line h2 {
     min-width: 700px;
     height: 100px;
@@ -925,6 +935,9 @@ a {
     @media (max-width: 640px) {
       .title-page .bottom-line h2 {
         padding-left: 20px; } }
+    @media (min-height: 500px) and (max-height: 650px) {
+      .title-page .bottom-line h2 {
+        min-width: 600px; } }
 
 .title-page .connect {
   position: absolute;
@@ -943,12 +956,19 @@ a {
   position: relative; }
   .slider-section .left-box h2 {
     margin-bottom: 100px; }
+    @media (min-height: 500px) and (max-height: 650px) {
+      .slider-section .left-box h2 {
+        font-size: 70px;
+        margin-bottom: 10px; } }
   .slider-section .right-box {
     position: relative; }
     .slider-section .right-box .digit-holder {
       -ms-flex-pack: end;
           justify-content: flex-end;
       margin-top: -130px; }
+      @media (min-height: 500px) and (max-height: 650px) {
+        .slider-section .right-box .digit-holder {
+          margin-top: -250px; } }
       .slider-section .right-box .digit-holder span {
         font-size: 200px;
         font-weight: bold; }
@@ -1574,3 +1594,11 @@ h1.wt2w6y46 {
 @media (min-width: 1200px) and (max-width: 1400px) {
   .owl-carousel .owl-item {
     padding-top: 75px; } }
+
+@media (min-height: 500px) and (max-height: 650px) {
+  .owl-carousel .owl-item {
+    padding-top: 55px; } }
+
+@media (min-height: 500px) and (max-height: 650px) {
+  .contacts .container {
+    padding-top: 40px; } }

@@ -25,7 +25,7 @@ var owl = $('.owl-carousel');
 $.fn.proxyMoveAllowed = false;
 
 var fullpage_opts = {
-    // responsiveHeight: '700', //// turn on if need
+    // responsiveHeight: '600', //// turn on if need
     responsiveWidth: '769',
     licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
     fixedElements: '#header, #fixed-bg',
